@@ -59,7 +59,7 @@ public class Project {
     @Override public int hashCode() {
         return Objects.hash(getId(), getName(), getDateCreated());
     }
-    
+
     @Override public String toString() {
         return "Project{" +
                "id=" + id +
