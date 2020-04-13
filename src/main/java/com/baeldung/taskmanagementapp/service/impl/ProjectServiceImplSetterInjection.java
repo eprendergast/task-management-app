@@ -1,5 +1,6 @@
 package com.baeldung.taskmanagementapp.service.impl;
 
+
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,13 +12,11 @@ import com.baeldung.taskmanagementapp.persistence.repository.IProjectRepository;
 import com.baeldung.taskmanagementapp.service.IProjectService;
 
 @Service
-public class ProjectServiceImpl implements IProjectService {
+public class ProjectServiceImplSetterInjection implements IProjectService {
 
     private IProjectRepository projectRepository;
 
-    public ProjectServiceImpl(@Qualifier("projectRepositoryImpl2") IProjectRepository projectRepository) {
-        this.projectRepository = projectRepository; // project repository is being injected through the ProjectServiceImpl constructor
-    }
+    // removed the constructor as it is no longer needed
 
     @Override
     public Optional<Project> findById(Long id) {
@@ -29,11 +28,10 @@ public class ProjectServiceImpl implements IProjectService {
         return projectRepository.save(project);
     }
 
-    public IProjectRepository getProjectRepository() {
-        return projectRepository;
-    }
-
+    @Autowired // marks the projectRepository bean to be injected
+    @Qualifier("projectRepositoryImpl2") // @Qualifier points to the bean we want to inject, since there are multiple implementations
     public void setProjectRepository(IProjectRepository projectRepository) {
         this.projectRepository = projectRepository;
     }
 }
+

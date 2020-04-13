@@ -11,13 +11,11 @@ import com.baeldung.taskmanagementapp.persistence.repository.IProjectRepository;
 import com.baeldung.taskmanagementapp.service.IProjectService;
 
 @Service
-public class ProjectServiceImpl implements IProjectService {
+public class ProjectServiceImplFieldInjection implements IProjectService {
 
+    @Autowired // Spring knows to inject this at startup
+    @Qualifier("projectRepositoryImpl2")
     private IProjectRepository projectRepository;
-
-    public ProjectServiceImpl(@Qualifier("projectRepositoryImpl2") IProjectRepository projectRepository) {
-        this.projectRepository = projectRepository; // project repository is being injected through the ProjectServiceImpl constructor
-    }
 
     @Override
     public Optional<Project> findById(Long id) {
@@ -29,11 +27,4 @@ public class ProjectServiceImpl implements IProjectService {
         return projectRepository.save(project);
     }
 
-    public IProjectRepository getProjectRepository() {
-        return projectRepository;
-    }
-
-    public void setProjectRepository(IProjectRepository projectRepository) {
-        this.projectRepository = projectRepository;
-    }
 }
