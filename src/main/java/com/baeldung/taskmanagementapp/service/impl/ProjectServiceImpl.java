@@ -3,11 +3,13 @@ package com.baeldung.taskmanagementapp.service.impl;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.baeldung.taskmanagementapp.persistence.model.Project;
 import com.baeldung.taskmanagementapp.persistence.repository.IProjectRepository;
 import com.baeldung.taskmanagementapp.service.IProjectService;
 
+@Service
 public class ProjectServiceImpl implements IProjectService {
 
     @Autowired

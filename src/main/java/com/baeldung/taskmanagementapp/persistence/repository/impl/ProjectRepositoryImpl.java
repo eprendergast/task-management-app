@@ -4,9 +4,12 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
+import org.springframework.stereotype.Repository;
+
 import com.baeldung.taskmanagementapp.persistence.model.Project;
 import com.baeldung.taskmanagementapp.persistence.repository.IProjectRepository;
 
+@Repository
 public class ProjectRepositoryImpl implements IProjectRepository {
 
     List<Project> projects = new ArrayList<>();
