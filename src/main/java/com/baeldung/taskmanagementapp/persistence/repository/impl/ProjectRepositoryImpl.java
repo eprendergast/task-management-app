@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Repository;
 
 import com.baeldung.taskmanagementapp.persistence.model.Project;
@@ -13,8 +14,9 @@ import com.baeldung.taskmanagementapp.persistence.repository.IProjectRepository;
 @Repository
 public class ProjectRepositoryImpl implements IProjectRepository {
 
-    @Value("${project.prefix}")
+    @Value("${project.prefix}") // injects value of property into variable
     private String prefix;
+
     @Value("${project.suffix}")
     private Integer suffix;
 

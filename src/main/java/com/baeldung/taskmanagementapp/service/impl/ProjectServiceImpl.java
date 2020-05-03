@@ -4,6 +4,8 @@ import java.util.Optional;
 
 import javax.annotation.PostConstruct;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
@@ -17,24 +19,21 @@ public class ProjectServiceImpl implements IProjectService {
 
     private IProjectRepository projectRepository;
 
-    private IProjectRepository projectRepository2;
+    private Logger LOG = LoggerFactory.getLogger(ProjectServiceImpl.class);
 
-    @PostConstruct
-    public void after() {
-
-    }
-
-    public ProjectServiceImpl(@Qualifier("projectRepositoryImpl2") IProjectRepository projectRepository) {
+    public ProjectServiceImpl(@Qualifier("projectRepositoryImpl") IProjectRepository projectRepository) {
         this.projectRepository = projectRepository; // project repository is being injected through the ProjectServiceImpl constructor
     }
 
     @Override
     public Optional<Project> findById(Long id) {
+        LOG.debug("Project Service >> Finding Project By ID {}", id);
         return projectRepository.findById(id);
     }
 
     @Override
     public Project save(Project project) {
+        LOG.debug("Project Service >> Saving Project {}", project);
         return projectRepository.save(project);
     }
 
