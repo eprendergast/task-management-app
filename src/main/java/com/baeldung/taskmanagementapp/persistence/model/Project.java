@@ -9,6 +9,7 @@ public class Project {
     private Long id;
     private String name;
     private LocalDate dateCreated;
+    private String internalId;
 
     public Project(Long id, String name, LocalDate dateCreated) {
         if (Objects.isNull(id)) {

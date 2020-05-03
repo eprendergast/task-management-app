@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Repository;
 
 import com.baeldung.taskmanagementapp.persistence.model.Project;
@@ -11,6 +12,11 @@ import com.baeldung.taskmanagementapp.persistence.repository.IProjectRepository;
 
 @Repository
 public class ProjectRepositoryImpl implements IProjectRepository {
+
+    @Value("${project.prefix}")
+    private String prefix;
+    @Value("${project.suffix}")
+    private Integer suffix;
 
     List<Project> projects = new ArrayList<>();
 
@@ -22,6 +28,7 @@ public class ProjectRepositoryImpl implements IProjectRepository {
     @Override
     public Project save(Project project) {
         Project existingProject = findById(project.getId()).orElse(null);
+        updateInternalId(project);
         if (existingProject == null) {
             projects.add(project);
         } else {
@@ -30,5 +37,9 @@ public class ProjectRepositoryImpl implements IProjectRepository {
             projects.add(newProject);
         }
         return project;
+    }
+
+    private void updateInternalId(Project project) {
+        project.setInternalId(prefix + "-" + project.getId() + "-" + suffix);
     }
 }
