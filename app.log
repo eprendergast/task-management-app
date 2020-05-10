@@ -1,40 +1,95 @@
-2020-05-06 18:27:43.685  INFO 75385 --- [main] com.baeldung.taskmanagementapp.App       : Starting App on Elizabeths-MacBook-Pro.local with PID 75385 (/Users/elizabethprendergast/Development/task-management-app/target/classes started by elizabethprendergast in /Users/elizabethprendergast/Development/task-management-app)
-2020-05-06 18:27:43.699 DEBUG 75385 --- [main] com.baeldung.taskmanagementapp.App       : Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
-2020-05-06 18:27:43.699  INFO 75385 --- [main] com.baeldung.taskmanagementapp.App       : The following profiles are active: "dev"
-2020-05-06 18:27:44.755  INFO 75385 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2020-05-06 18:27:44.856  INFO 75385 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1063 ms
-2020-05-06 18:27:44.911 DEBUG 75385 --- [main] c.b.t.service.impl.ProjectServiceImpl    : Project Service >> Saving Project Project{id=1, name='My First Project', dateCreated=2020-05-06}
-2020-05-06 18:27:44.913 DEBUG 75385 --- [main] c.b.t.service.impl.ProjectServiceImpl    : Project Service >> Finding Project By ID 1
-2020-05-06 18:27:45.035  INFO 75385 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-05-06 18:27:45.192  INFO 75385 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2020-05-06 18:27:45.197  INFO 75385 --- [main] com.baeldung.taskmanagementapp.App       : Started App in 2.56 seconds (JVM running for 3.363)
-2020-05-06 18:28:02.626  INFO 75385 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2020-05-06 18:28:02.639  INFO 75385 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 11 ms
-2020-05-06 18:28:50.043  INFO 75409 --- [main] c.b.taskmanagementapp.ApplicationTests   : Starting ApplicationTests on Elizabeths-MacBook-Pro.local with PID 75409 (started by elizabethprendergast in /Users/elizabethprendergast/Development/task-management-app)
-2020-05-06 18:28:50.045 DEBUG 75409 --- [main] c.b.taskmanagementapp.ApplicationTests   : Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
-2020-05-06 18:28:50.046  INFO 75409 --- [main] c.b.taskmanagementapp.ApplicationTests   : The following profiles are active: "dev"
-2020-05-06 18:28:51.285 DEBUG 75409 --- [main] c.b.t.service.impl.ProjectServiceImpl    : Project Service >> Saving Project Project{id=1, name='My First Project', dateCreated=2020-05-06}
-2020-05-06 18:28:51.289 DEBUG 75409 --- [main] c.b.t.service.impl.ProjectServiceImpl    : Project Service >> Finding Project By ID 1
-2020-05-06 18:28:51.795  INFO 75409 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-05-06 18:28:52.252  INFO 75409 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
-2020-05-06 18:28:52.305  INFO 75409 --- [main] c.b.taskmanagementapp.ApplicationTests   : Started ApplicationTests in 2.684 seconds (JVM running for 4.098)
-2020-05-06 18:28:52.891  INFO 75409 --- [main] o.s.t.c.s.DefaultTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
-2020-05-06 18:28:52.892  INFO 75409 --- [main] o.s.t.c.s.DefaultTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@49232c6f, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@5faeeb56, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@5396eeb1, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@279126f5, org.springframework.test.context.support.DirtiesContextTestExecutionListener@7781263c, org.springframework.test.context.event.EventPublishingTestExecutionListener@5fdd97c1, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@3b5a19ed, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@15d236fd, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@6b9c42bd, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@584ca390, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@33324c05]
-2020-05-06 18:28:53.054 DEBUG 75409 --- [main] c.b.t.service.impl.ProjectServiceImpl    : Project Service >> Saving Project Project{id=1, name='My First Project', dateCreated=2020-05-06}
-2020-05-06 18:28:53.054 DEBUG 75409 --- [main] c.b.t.service.impl.ProjectServiceImpl    : Project Service >> Finding Project By ID 1
-2020-05-06 18:28:53.216 DEBUG 75409 --- [main] c.b.t.service.impl.ProjectServiceImpl    : Project Service >> Saving Project Project{id=1, name='name', dateCreated=2020-05-06}
-2020-05-06 18:28:53.216 DEBUG 75409 --- [main] c.b.t.service.impl.ProjectServiceImpl    : Project Service >> Saving Project Project{id=1, name='name', dateCreated=2020-05-06}
-2020-05-06 18:28:53.237  INFO 75409 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2020-05-06 18:29:04.893  INFO 75385 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2020-05-06 18:29:09.310  INFO 75442 --- [main] com.baeldung.taskmanagementapp.App       : Starting App on Elizabeths-MacBook-Pro.local with PID 75442 (/Users/elizabethprendergast/Development/task-management-app/target/classes started by elizabethprendergast in /Users/elizabethprendergast/Development/task-management-app)
-2020-05-06 18:29:09.312 DEBUG 75442 --- [main] com.baeldung.taskmanagementapp.App       : Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
-2020-05-06 18:29:09.313  INFO 75442 --- [main] com.baeldung.taskmanagementapp.App       : The following profiles are active: "dev"
-2020-05-06 18:29:10.515  INFO 75442 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2020-05-06 18:29:10.607  INFO 75442 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1166 ms
-2020-05-06 18:29:10.660 DEBUG 75442 --- [main] c.b.t.service.impl.ProjectServiceImpl    : Project Service >> Saving Project Project{id=1, name='My First Project', dateCreated=2020-05-06}
-2020-05-06 18:29:10.662 DEBUG 75442 --- [main] c.b.t.service.impl.ProjectServiceImpl    : Project Service >> Finding Project By ID 1
-2020-05-06 18:29:10.805  INFO 75442 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-05-06 18:29:10.960  INFO 75442 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2020-05-06 18:29:10.965  INFO 75442 --- [main] com.baeldung.taskmanagementapp.App       : Started App in 2.433 seconds (JVM running for 3.038)
-2020-05-06 18:29:23.267  INFO 75442 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2020-05-06 18:29:23.274  INFO 75442 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2020-05-10 14:05:29.786  INFO 75442 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-10 14:08:46.491  INFO 91361 --- [main] com.baeldung.taskmanagementapp.App       : Starting App on Elizabeths-MacBook-Pro.local with PID 91361 (/Users/elizabethprendergast/Development/task-management-app/target/classes started by elizabethprendergast in /Users/elizabethprendergast/Development/task-management-app)
+2020-05-10 14:08:46.500 DEBUG 91361 --- [main] com.baeldung.taskmanagementapp.App       : Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2020-05-10 14:08:46.501  INFO 91361 --- [main] com.baeldung.taskmanagementapp.App       : No active profile set, falling back to default profiles: default
+2020-05-10 14:08:49.067  INFO 91361 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-05-10 14:08:49.219  INFO 91361 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2534 ms
+2020-05-10 14:08:49.318 DEBUG 91361 --- [main] c.b.t.service.impl.ProjectServiceImpl    : Project Service >> Saving Project Project{id=1, name='My First Project', dateCreated=2020-05-10}
+2020-05-10 14:08:49.320 DEBUG 91361 --- [main] c.b.t.service.impl.ProjectServiceImpl    : Project Service >> Finding Project By ID 1
+2020-05-10 14:08:49.527  INFO 91361 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-10 14:08:49.814  INFO 91361 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-05-10 14:08:49.820  INFO 91361 --- [main] com.baeldung.taskmanagementapp.App       : Started App in 5.232 seconds (JVM running for 6.848)
+2020-05-10 14:08:54.435  INFO 91361 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-10 14:11:36.793  INFO 92574 --- [main] com.baeldung.taskmanagementapp.App       : Starting App on Elizabeths-MacBook-Pro.local with PID 92574 (/Users/elizabethprendergast/Development/task-management-app/target/classes started by elizabethprendergast in /Users/elizabethprendergast/Development/task-management-app)
+2020-05-10 14:11:36.800 DEBUG 92574 --- [main] com.baeldung.taskmanagementapp.App       : Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2020-05-10 14:11:36.802  INFO 92574 --- [main] com.baeldung.taskmanagementapp.App       : No active profile set, falling back to default profiles: default
+2020-05-10 14:11:38.659  INFO 92574 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-05-10 14:11:38.768  INFO 92574 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1798 ms
+2020-05-10 14:11:39.016 DEBUG 92574 --- [main] c.b.t.service.impl.ProjectServiceImpl    : Project Service >> Saving Project Project{id=1, name='My First Project', dateCreated=2020-05-10}
+2020-05-10 14:11:39.018 DEBUG 92574 --- [main] c.b.t.service.impl.ProjectServiceImpl    : Project Service >> Finding Project By ID 1
+2020-05-10 14:11:39.173  INFO 92574 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-10 14:11:39.427  INFO 92574 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-05-10 14:11:39.487  INFO 92574 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-05-10 14:11:39.494  INFO 92574 --- [main] com.baeldung.taskmanagementapp.App       : Started App in 4.035 seconds (JVM running for 5.103)
+2020-05-10 14:15:08.625  INFO 92574 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-05-10 14:15:08.639  INFO 92574 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 13 ms
+2020-05-10 14:16:28.671  INFO 92574 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-10 14:16:33.020  INFO 92635 --- [main] com.baeldung.taskmanagementapp.App       : Starting App on Elizabeths-MacBook-Pro.local with PID 92635 (/Users/elizabethprendergast/Development/task-management-app/target/classes started by elizabethprendergast in /Users/elizabethprendergast/Development/task-management-app)
+2020-05-10 14:16:33.022 DEBUG 92635 --- [main] com.baeldung.taskmanagementapp.App       : Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2020-05-10 14:16:33.023  INFO 92635 --- [main] com.baeldung.taskmanagementapp.App       : No active profile set, falling back to default profiles: default
+2020-05-10 14:16:34.418  INFO 92635 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-05-10 14:16:34.509  INFO 92635 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1420 ms
+2020-05-10 14:16:34.734 DEBUG 92635 --- [main] c.b.t.service.impl.ProjectServiceImpl    : Project Service >> Saving Project Project{id=1, name='My First Project', dateCreated=2020-05-10}
+2020-05-10 14:16:34.737 DEBUG 92635 --- [main] c.b.t.service.impl.ProjectServiceImpl    : Project Service >> Finding Project By ID 1
+2020-05-10 14:16:34.845  INFO 92635 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-10 14:16:35.053  INFO 92635 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-05-10 14:16:35.105  INFO 92635 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-05-10 14:16:35.109  INFO 92635 --- [main] com.baeldung.taskmanagementapp.App       : Started App in 3.229 seconds (JVM running for 3.918)
+2020-05-10 14:16:38.859  INFO 92635 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-05-10 14:16:38.867  INFO 92635 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2020-05-10 14:18:57.297  INFO 92635 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-10 14:19:03.328  INFO 92677 --- [main] com.baeldung.taskmanagementapp.App       : Starting App on Elizabeths-MacBook-Pro.local with PID 92677 (/Users/elizabethprendergast/Development/task-management-app/target/classes started by elizabethprendergast in /Users/elizabethprendergast/Development/task-management-app)
+2020-05-10 14:19:03.331 DEBUG 92677 --- [main] com.baeldung.taskmanagementapp.App       : Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2020-05-10 14:19:03.332  INFO 92677 --- [main] com.baeldung.taskmanagementapp.App       : No active profile set, falling back to default profiles: default
+2020-05-10 14:19:05.064  INFO 92677 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-05-10 14:19:05.157  INFO 92677 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1741 ms
+2020-05-10 14:19:05.411 DEBUG 92677 --- [main] c.b.t.service.impl.ProjectServiceImpl    : Project Service >> Saving Project Project{id=1, name='My First Project', dateCreated=2020-05-10}
+2020-05-10 14:19:05.414 DEBUG 92677 --- [main] c.b.t.service.impl.ProjectServiceImpl    : Project Service >> Finding Project By ID 1
+2020-05-10 14:19:05.535  INFO 92677 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-10 14:19:05.755  INFO 92677 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/monitoring'
+2020-05-10 14:19:05.815  INFO 92677 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-05-10 14:19:05.820  INFO 92677 --- [main] com.baeldung.taskmanagementapp.App       : Started App in 3.465 seconds (JVM running for 4.133)
+2020-05-10 14:19:09.093  INFO 92677 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-05-10 14:19:09.117  INFO 92677 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 23 ms
+2020-05-10 14:20:58.787  INFO 92677 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-10 14:21:03.983  INFO 92699 --- [main] com.baeldung.taskmanagementapp.App       : Starting App on Elizabeths-MacBook-Pro.local with PID 92699 (/Users/elizabethprendergast/Development/task-management-app/target/classes started by elizabethprendergast in /Users/elizabethprendergast/Development/task-management-app)
+2020-05-10 14:21:03.986 DEBUG 92699 --- [main] com.baeldung.taskmanagementapp.App       : Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2020-05-10 14:21:03.987  INFO 92699 --- [main] com.baeldung.taskmanagementapp.App       : No active profile set, falling back to default profiles: default
+2020-05-10 14:21:05.525  INFO 92699 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-05-10 14:21:05.612  INFO 92699 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1541 ms
+2020-05-10 14:21:05.805 DEBUG 92699 --- [main] c.b.t.service.impl.ProjectServiceImpl    : Project Service >> Saving Project Project{id=1, name='My First Project', dateCreated=2020-05-10}
+2020-05-10 14:21:05.816 DEBUG 92699 --- [main] c.b.t.service.impl.ProjectServiceImpl    : Project Service >> Finding Project By ID 1
+2020-05-10 14:21:05.925  INFO 92699 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-10 14:21:06.100  INFO 92699 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/monitoring'
+2020-05-10 14:21:06.144  INFO 92699 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-05-10 14:21:06.149  INFO 92699 --- [main] com.baeldung.taskmanagementapp.App       : Started App in 3.232 seconds (JVM running for 4.406)
+2020-05-10 14:21:08.032  INFO 92699 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-05-10 14:21:08.045  INFO 92699 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
+2020-05-10 14:57:59.292  INFO 92699 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-10 14:58:03.461  INFO 93111 --- [main] com.baeldung.taskmanagementapp.App       : Starting App on Elizabeths-MacBook-Pro.local with PID 93111 (/Users/elizabethprendergast/Development/task-management-app/target/classes started by elizabethprendergast in /Users/elizabethprendergast/Development/task-management-app)
+2020-05-10 14:58:03.464 DEBUG 93111 --- [main] com.baeldung.taskmanagementapp.App       : Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2020-05-10 14:58:03.465  INFO 93111 --- [main] com.baeldung.taskmanagementapp.App       : No active profile set, falling back to default profiles: default
+2020-05-10 14:58:04.846  INFO 93111 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-05-10 14:58:04.919  INFO 93111 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1382 ms
+2020-05-10 14:58:05.128 DEBUG 93111 --- [main] c.b.t.service.impl.ProjectServiceImpl    : Project Service >> Saving Project Project{id=1, name='My First Project', dateCreated=2020-05-10}
+2020-05-10 14:58:05.131 DEBUG 93111 --- [main] c.b.t.service.impl.ProjectServiceImpl    : Project Service >> Finding Project By ID 1
+2020-05-10 14:58:05.231  INFO 93111 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-10 14:58:05.393  INFO 93111 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/monitoring'
+2020-05-10 14:58:05.451  INFO 93111 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-05-10 14:58:05.458  INFO 93111 --- [main] com.baeldung.taskmanagementapp.App       : Started App in 2.789 seconds (JVM running for 3.385)
+2020-05-10 14:58:17.470  INFO 93111 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-05-10 14:58:17.480  INFO 93111 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2020-05-10 15:02:40.834  INFO 93111 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-10 15:03:00.980  INFO 93186 --- [main] com.baeldung.taskmanagementapp.App       : Starting App on Elizabeths-MacBook-Pro.local with PID 93186 (/Users/elizabethprendergast/Development/task-management-app/target/classes started by elizabethprendergast in /Users/elizabethprendergast/Development/task-management-app)
+2020-05-10 15:03:00.985 DEBUG 93186 --- [main] com.baeldung.taskmanagementapp.App       : Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2020-05-10 15:03:00.988  INFO 93186 --- [main] com.baeldung.taskmanagementapp.App       : No active profile set, falling back to default profiles: default
+2020-05-10 15:03:02.320  INFO 93186 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-05-10 15:03:02.417  INFO 93186 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1318 ms
+2020-05-10 15:03:02.654 DEBUG 93186 --- [main] c.b.t.service.impl.ProjectServiceImpl    : Project Service >> Saving Project Project{id=1, name='My First Project', dateCreated=2020-05-10}
+2020-05-10 15:03:02.657 DEBUG 93186 --- [main] c.b.t.service.impl.ProjectServiceImpl    : Project Service >> Finding Project By ID 1
+2020-05-10 15:03:02.777  INFO 93186 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-10 15:03:03.014  INFO 93186 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/monitoring'
+2020-05-10 15:03:03.076  INFO 93186 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-05-10 15:03:03.081  INFO 93186 --- [main] com.baeldung.taskmanagementapp.App       : Started App in 2.966 seconds (JVM running for 3.633)
+2020-05-10 15:03:09.553  INFO 93186 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-05-10 15:03:09.564  INFO 93186 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
