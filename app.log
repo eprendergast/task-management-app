@@ -2175,3 +2175,118 @@ Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No q
 2020-05-16 14:36:36.145  INFO 10215 --- [main] t.p.r.i.ProjectRepositoryIntegrationTest : Started ProjectRepositoryIntegrationTest in 6.367 seconds (JVM running for 8.751)
 2020-05-16 14:36:36.516  INFO 10215 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
 2020-05-16 14:36:36.518  INFO 10215 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-05-16 14:41:22.477  INFO 10285 --- [main] t.p.r.i.ProjectRepositoryIntegrationTest : Starting ProjectRepositoryIntegrationTest on Elizabeths-MacBook-Pro.local with PID 10285 (started by elizabethprendergast in /Users/elizabethprendergast/Development/task-management-app)
+2020-05-16 14:41:22.484 DEBUG 10285 --- [main] t.p.r.i.ProjectRepositoryIntegrationTest : Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2020-05-16 14:41:22.486  INFO 10285 --- [main] t.p.r.i.ProjectRepositoryIntegrationTest : No active profile set, falling back to default profiles: default
+2020-05-16 14:41:23.796  INFO 10285 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-05-16 14:41:23.868  INFO 10285 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 60ms. Found 1 JPA repository interfaces.
+2020-05-16 14:41:26.319  INFO 10285 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-16 14:41:27.033  WARN 10285 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-16 14:41:27.415  INFO 10285 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-16 14:41:27.878  INFO 10285 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/monitoring'
+2020-05-16 14:41:27.952  INFO 10285 --- [main] t.p.r.i.ProjectRepositoryIntegrationTest : Started ProjectRepositoryIntegrationTest in 6.196 seconds (JVM running for 8.54)
+2020-05-16 14:41:28.435  INFO 10285 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-16 14:41:28.440  INFO 10285 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-05-16 14:52:07.875  INFO 10404 --- [main] t.p.r.i.ProjectRepositoryIntegrationTest : Starting ProjectRepositoryIntegrationTest on Elizabeths-MacBook-Pro.local with PID 10404 (started by elizabethprendergast in /Users/elizabethprendergast/Development/task-management-app)
+2020-05-16 14:52:07.878 DEBUG 10404 --- [main] t.p.r.i.ProjectRepositoryIntegrationTest : Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2020-05-16 14:52:07.880  INFO 10404 --- [main] t.p.r.i.ProjectRepositoryIntegrationTest : No active profile set, falling back to default profiles: default
+2020-05-16 14:52:09.294  INFO 10404 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-05-16 14:52:09.381  INFO 10404 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 71ms. Found 1 JPA repository interfaces.
+2020-05-16 14:52:12.067  INFO 10404 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-16 14:52:12.917  WARN 10404 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-16 14:52:13.336  INFO 10404 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-16 14:52:13.872  INFO 10404 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/monitoring'
+2020-05-16 14:52:13.952  INFO 10404 --- [main] t.p.r.i.ProjectRepositoryIntegrationTest : Started ProjectRepositoryIntegrationTest in 6.747 seconds (JVM running for 8.827)
+2020-05-16 14:52:14.646  INFO 10404 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-16 14:52:14.648  INFO 10404 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-05-16 15:40:27.205  INFO 10965 --- [main] c.b.t.p.r.TaskRepositoryIntegrationTest  : Starting TaskRepositoryIntegrationTest on Elizabeths-MacBook-Pro.local with PID 10965 (started by elizabethprendergast in /Users/elizabethprendergast/Development/task-management-app)
+2020-05-16 15:40:27.206 DEBUG 10965 --- [main] c.b.t.p.r.TaskRepositoryIntegrationTest  : Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2020-05-16 15:40:27.207  INFO 10965 --- [main] c.b.t.p.r.TaskRepositoryIntegrationTest  : No active profile set, falling back to default profiles: default
+2020-05-16 15:40:28.240  INFO 10965 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-05-16 15:40:28.319  INFO 10965 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 68ms. Found 2 JPA repository interfaces.
+2020-05-16 15:40:30.747  INFO 10965 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-16 15:40:31.444  WARN 10965 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-16 15:40:31.937  INFO 10965 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-16 15:40:32.404  INFO 10965 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/monitoring'
+2020-05-16 15:40:32.448  INFO 10965 --- [main] c.b.t.p.r.TaskRepositoryIntegrationTest  : Started TaskRepositoryIntegrationTest in 5.857 seconds (JVM running for 7.797)
+2020-05-16 15:40:32.761  INFO 10965 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-16 15:40:32.765  INFO 10965 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-05-16 15:40:32.768 ERROR 10965 --- [SpringContextShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000478: Unsuccessful: drop table project if exists
+2020-05-16 15:41:00.160  INFO 10974 --- [main] c.b.t.p.r.TaskRepositoryIntegrationTest  : Starting TaskRepositoryIntegrationTest on Elizabeths-MacBook-Pro.local with PID 10974 (started by elizabethprendergast in /Users/elizabethprendergast/Development/task-management-app)
+2020-05-16 15:41:00.162 DEBUG 10974 --- [main] c.b.t.p.r.TaskRepositoryIntegrationTest  : Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2020-05-16 15:41:00.162  INFO 10974 --- [main] c.b.t.p.r.TaskRepositoryIntegrationTest  : No active profile set, falling back to default profiles: default
+2020-05-16 15:41:01.175  INFO 10974 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-05-16 15:41:01.233  INFO 10974 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 49ms. Found 2 JPA repository interfaces.
+2020-05-16 15:41:03.225  INFO 10974 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-16 15:41:03.916  WARN 10974 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-16 15:41:04.387  INFO 10974 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-16 15:41:04.903  INFO 10974 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/monitoring'
+2020-05-16 15:41:05.003  INFO 10974 --- [main] c.b.t.p.r.TaskRepositoryIntegrationTest  : Started TaskRepositoryIntegrationTest in 5.36 seconds (JVM running for 7.01)
+2020-05-16 15:41:05.416  INFO 10974 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-16 15:41:05.421  INFO 10974 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-05-16 15:41:05.426 ERROR 10974 --- [SpringContextShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000478: Unsuccessful: drop table project if exists
+2020-05-16 15:41:22.819  INFO 10982 --- [main] c.b.t.p.r.TaskRepositoryIntegrationTest  : Starting TaskRepositoryIntegrationTest on Elizabeths-MacBook-Pro.local with PID 10982 (started by elizabethprendergast in /Users/elizabethprendergast/Development/task-management-app)
+2020-05-16 15:41:22.821 DEBUG 10982 --- [main] c.b.t.p.r.TaskRepositoryIntegrationTest  : Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2020-05-16 15:41:22.822  INFO 10982 --- [main] c.b.t.p.r.TaskRepositoryIntegrationTest  : No active profile set, falling back to default profiles: default
+2020-05-16 15:41:23.949  INFO 10982 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-05-16 15:41:24.019  INFO 10982 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 61ms. Found 2 JPA repository interfaces.
+2020-05-16 15:41:26.226  INFO 10982 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-16 15:41:26.856  WARN 10982 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-16 15:41:27.311  INFO 10982 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-16 15:41:27.754  INFO 10982 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/monitoring'
+2020-05-16 15:41:27.799  INFO 10982 --- [main] c.b.t.p.r.TaskRepositoryIntegrationTest  : Started TaskRepositoryIntegrationTest in 5.681 seconds (JVM running for 7.864)
+2020-05-16 15:41:28.133  INFO 10982 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-16 15:41:28.135  INFO 10982 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-05-16 15:41:28.137 ERROR 10982 --- [SpringContextShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000478: Unsuccessful: drop table project if exists
+2020-05-16 15:41:39.151  INFO 10989 --- [main] c.b.t.p.r.TaskRepositoryIntegrationTest  : Starting TaskRepositoryIntegrationTest on Elizabeths-MacBook-Pro.local with PID 10989 (started by elizabethprendergast in /Users/elizabethprendergast/Development/task-management-app)
+2020-05-16 15:41:39.154 DEBUG 10989 --- [main] c.b.t.p.r.TaskRepositoryIntegrationTest  : Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2020-05-16 15:41:39.155  INFO 10989 --- [main] c.b.t.p.r.TaskRepositoryIntegrationTest  : No active profile set, falling back to default profiles: default
+2020-05-16 15:41:40.157  INFO 10989 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-05-16 15:41:40.217  INFO 10989 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 52ms. Found 2 JPA repository interfaces.
+2020-05-16 15:41:41.940  INFO 10989 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-16 15:41:42.615  WARN 10989 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-16 15:41:43.069  INFO 10989 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-16 15:41:43.510  INFO 10989 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/monitoring'
+2020-05-16 15:41:43.562  INFO 10989 --- [main] c.b.t.p.r.TaskRepositoryIntegrationTest  : Started TaskRepositoryIntegrationTest in 4.936 seconds (JVM running for 6.749)
+2020-05-16 15:41:43.968  INFO 10989 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-16 15:41:43.975  INFO 10989 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-05-16 15:41:43.977 ERROR 10989 --- [SpringContextShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000478: Unsuccessful: drop table project if exists
+2020-05-16 15:42:59.025  INFO 11007 --- [main] c.b.t.p.r.TaskRepositoryIntegrationTest  : Starting TaskRepositoryIntegrationTest on Elizabeths-MacBook-Pro.local with PID 11007 (started by elizabethprendergast in /Users/elizabethprendergast/Development/task-management-app)
+2020-05-16 15:42:59.027 DEBUG 11007 --- [main] c.b.t.p.r.TaskRepositoryIntegrationTest  : Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2020-05-16 15:42:59.028  INFO 11007 --- [main] c.b.t.p.r.TaskRepositoryIntegrationTest  : No active profile set, falling back to default profiles: default
+2020-05-16 15:43:00.212  INFO 11007 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-05-16 15:43:00.316  INFO 11007 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 91ms. Found 2 JPA repository interfaces.
+2020-05-16 15:43:03.145  INFO 11007 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-16 15:43:04.062  WARN 11007 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-16 15:43:04.971  INFO 11007 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-16 15:43:05.639  INFO 11007 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/monitoring'
+2020-05-16 15:43:05.708  INFO 11007 --- [main] c.b.t.p.r.TaskRepositoryIntegrationTest  : Started TaskRepositoryIntegrationTest in 7.188 seconds (JVM running for 9.721)
+2020-05-16 15:43:28.391  INFO 11007 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-16 15:43:28.394  INFO 11007 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-05-16 15:43:28.398 ERROR 11007 --- [SpringContextShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000478: Unsuccessful: drop table project if exists
+2020-05-16 15:44:31.011  INFO 11023 --- [main] c.b.t.p.r.TaskRepositoryIntegrationTest  : Starting TaskRepositoryIntegrationTest on Elizabeths-MacBook-Pro.local with PID 11023 (started by elizabethprendergast in /Users/elizabethprendergast/Development/task-management-app)
+2020-05-16 15:44:31.012 DEBUG 11023 --- [main] c.b.t.p.r.TaskRepositoryIntegrationTest  : Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2020-05-16 15:44:31.013  INFO 11023 --- [main] c.b.t.p.r.TaskRepositoryIntegrationTest  : No active profile set, falling back to default profiles: default
+2020-05-16 15:44:32.086  INFO 11023 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-05-16 15:44:32.154  INFO 11023 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 59ms. Found 2 JPA repository interfaces.
+2020-05-16 15:44:34.050  INFO 11023 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-16 15:44:34.674  WARN 11023 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-16 15:44:35.116  INFO 11023 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-16 15:44:35.546  INFO 11023 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/monitoring'
+2020-05-16 15:44:35.594  INFO 11023 --- [main] c.b.t.p.r.TaskRepositoryIntegrationTest  : Started TaskRepositoryIntegrationTest in 5.245 seconds (JVM running for 6.863)
+2020-05-16 15:44:35.956  INFO 11023 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-16 15:44:35.958  INFO 11023 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-05-16 15:44:35.960 ERROR 11023 --- [SpringContextShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000478: Unsuccessful: drop table project if exists
+2020-05-16 15:46:50.263  INFO 11061 --- [main] c.b.t.p.r.TaskRepositoryIntegrationTest  : Starting TaskRepositoryIntegrationTest on Elizabeths-MacBook-Pro.local with PID 11061 (started by elizabethprendergast in /Users/elizabethprendergast/Development/task-management-app)
+2020-05-16 15:46:50.265 DEBUG 11061 --- [main] c.b.t.p.r.TaskRepositoryIntegrationTest  : Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2020-05-16 15:46:50.266  INFO 11061 --- [main] c.b.t.p.r.TaskRepositoryIntegrationTest  : No active profile set, falling back to default profiles: default
+2020-05-16 15:46:51.403  INFO 11061 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-05-16 15:46:51.476  INFO 11061 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 64ms. Found 2 JPA repository interfaces.
+2020-05-16 15:46:53.619  INFO 11061 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-16 15:46:54.316  WARN 11061 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-16 15:46:54.820  INFO 11061 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-16 15:46:55.327  INFO 11061 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/monitoring'
+2020-05-16 15:46:55.377  INFO 11061 --- [main] c.b.t.p.r.TaskRepositoryIntegrationTest  : Started TaskRepositoryIntegrationTest in 5.875 seconds (JVM running for 7.696)
+2020-05-16 15:46:55.762  INFO 11061 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-16 15:46:55.767  INFO 11061 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-05-16 15:46:55.770 ERROR 11061 --- [SpringContextShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000478: Unsuccessful: drop table project if exists

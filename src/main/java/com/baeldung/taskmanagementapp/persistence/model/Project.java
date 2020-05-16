@@ -1,10 +1,15 @@
 package com.baeldung.taskmanagementapp.persistence.model;
 
 import java.time.LocalDate;
+import java.util.Set;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.OneToMany;
 
 @Entity
 public class Project {
@@ -16,6 +21,10 @@ public class Project {
     private String name;
 
     private LocalDate dateCreated;
+
+    @OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
+    @JoinColumn(name = "project_id")
+    private Set<Task> tasks;
 
     public Project(String name, LocalDate dateCreated) {
         this.name = name;
