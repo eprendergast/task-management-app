@@ -1,28 +1,32 @@
 package com.baeldung.taskmanagementapp.persistence.model;
 
 import java.time.LocalDate;
-import java.util.Objects;
-import java.util.Random;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
+@Entity
 public class Project {
 
+    @Id
+    @GeneratedValue
     private Long id;
+
     private String name;
+
     private LocalDate dateCreated;
 
-    private String internalId;
-
-    public Project(Long id, String name, LocalDate dateCreated) {
-        if (Objects.isNull(id)) {
-            id = new Random().nextLong();
-        }
-        this.id = id;
+    public Project(String name, LocalDate dateCreated) {
         this.name = name;
         this.dateCreated = dateCreated;
     }
 
+    protected Project() {
+    }
+
     public Project(Project project) {
-        this(project.getId(), project.getName(), project.getDateCreated());
+        this(project.getName(), project.getDateCreated());
     }
 
     public Long getId() {
@@ -49,32 +53,46 @@ public class Project {
         this.dateCreated = dateCreated;
     }
 
-    public String getInternalId() {
-        return internalId;
+    @Override
+    public int hashCode() {
+        final int prime = 31;
+        int result = 1;
+        result = prime * result + ((dateCreated == null) ? 0 : dateCreated.hashCode());
+        result = prime * result + ((id == null) ? 0 : id.hashCode());
+        result = prime * result + ((name == null) ? 0 : name.hashCode());
+        return result;
     }
 
-    public void setInternalId(String internalId) {
-        this.internalId = internalId;
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj)
+            return true;
+        if (obj == null)
+            return false;
+        if (getClass() != obj.getClass())
+            return false;
+        Project other = (Project) obj;
+        if (dateCreated == null) {
+            if (other.dateCreated != null)
+                return false;
+        } else if (!dateCreated.equals(other.dateCreated))
+            return false;
+        if (id == null) {
+            if (other.id != null)
+                return false;
+        } else if (!id.equals(other.id))
+            return false;
+        if (name == null) {
+            if (other.name != null)
+                return false;
+        } else if (!name.equals(other.name))
+            return false;
+        return true;
     }
 
-    @Override public boolean equals(Object o) {
-        if (this == o) return true;
-        if (!(o instanceof Project)) return false;
-        Project project = (Project) o;
-        return getId().equals(project.getId()) &&
-               getName().equals(project.getName()) &&
-               getDateCreated().equals(project.getDateCreated());
+    @Override
+    public String toString() {
+        return "Project [id=" + id + ", name=" + name + "] \n";
     }
 
-    @Override public int hashCode() {
-        return Objects.hash(getId(), getName(), getDateCreated());
-    }
-
-    @Override public String toString() {
-        return "Project{" +
-               "id=" + id +
-               ", name='" + name + '\'' +
-               ", dateCreated=" + dateCreated +
-               '}';
-    }
 }

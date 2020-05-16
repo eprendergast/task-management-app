@@ -16,7 +16,7 @@ import com.baeldung.taskmanagementapp.service.IProjectService;
 public class App {
 
     @Autowired
-    IProjectService projectService;
+    private IProjectService projectService;
 
     public static void main(final String... args) {
         SpringApplication.run(App.class, args);
@@ -24,11 +24,10 @@ public class App {
 
     @PostConstruct
     public void postConstruct() {
-        Project project = new Project(1L, "My First Project", LocalDate.now());
+        Project project = new Project("My First Project", LocalDate.now());
         projectService.save(project);
 
         Optional<Project> optionalProject = projectService.findById(1L);
         optionalProject.ifPresent(System.out::println);
     }
-
 }

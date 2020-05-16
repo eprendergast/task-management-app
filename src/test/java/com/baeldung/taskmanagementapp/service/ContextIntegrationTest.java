@@ -21,9 +21,8 @@ public class ContextIntegrationTest {
 
     @Test
     public void whenSavingProject_thenOK() {
-        Project savedProject = projectService.save(new Project(1L, "name", LocalDate.now()));
+        Project savedProject = projectService.save(new Project("name", LocalDate.now()));
         projectService.save(savedProject);
-
         assertThat(savedProject, is(notNullValue()));
     }
 
