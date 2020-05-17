@@ -1,12 +1,16 @@
 package com.baeldung.taskmanagementapp.persistence.model;
 
 import java.time.LocalDate;
+import java.util.Collections;
+import java.util.HashSet;
 import java.util.Set;
+import java.util.stream.Collectors;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.OneToMany;
@@ -15,7 +19,7 @@ import javax.persistence.OneToMany;
 public class Project {
 
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     private String name;
@@ -29,6 +33,7 @@ public class Project {
     public Project(String name, LocalDate dateCreated) {
         this.name = name;
         this.dateCreated = dateCreated;
+        this.tasks = Collections.unmodifiableSet(new HashSet<>());
     }
 
     protected Project() {
@@ -36,6 +41,9 @@ public class Project {
 
     public Project(Project project) {
         this(project.getName(), project.getDateCreated());
+        this.tasks = project.getTasks()
+                            .stream()
+                            .collect(Collectors.toSet());
     }
 
     public Long getId() {
@@ -62,6 +70,14 @@ public class Project {
         this.dateCreated = dateCreated;
     }
 
+    public Set<Task> getTasks() {
+        return tasks;
+    }
+
+    public void setTasks(Set<Task> tasks) {
+        this.tasks = tasks;
+    }
+
     @Override
     public int hashCode() {
         final int prime = 31;
@@ -69,6 +85,7 @@ public class Project {
         result = prime * result + ((dateCreated == null) ? 0 : dateCreated.hashCode());
         result = prime * result + ((id == null) ? 0 : id.hashCode());
         result = prime * result + ((name == null) ? 0 : name.hashCode());
+        result = prime * result + ((tasks == null) ? 0 : tasks.hashCode());
         return result;
     }
 
@@ -96,12 +113,17 @@ public class Project {
                 return false;
         } else if (!name.equals(other.name))
             return false;
+        if (tasks == null) {
+            if (other.tasks != null)
+                return false;
+        } else if (!tasks.equals(other.tasks))
+            return false;
         return true;
     }
 
     @Override
     public String toString() {
-        return "Project [id=" + id + ", name=" + name + "] \n";
+        return "Project [id=" + id + ", name=" + name + ", tasks=" + tasks + "] \n";
     }
 
 }
